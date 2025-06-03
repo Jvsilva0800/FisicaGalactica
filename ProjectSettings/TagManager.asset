@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - BlockOne
+  - ponte
+  - instanceBlock
+  - changeVelocity
+  - noChangeVelocity
+  - Ladder
+  - Ground
+  - Enemy
+  - ReferencialPoint
+  - FinishPoint
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Calculator
+  - Water
+  - UI
+  - Block
+  - Player
+  - Ground
+  - CircleOne
+  - Enemy
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: 0sky
+    uniqueID: 417202715
+    locked: 0
+  - name: 1farMontains
+    uniqueID: 1445050035
+    locked: 0
+  - name: 2background
+    uniqueID: 4175100063
+    locked: 0
+  - name: front
+    uniqueID: 1702868915
+    locked: 0
+  - name: Details
+    uniqueID: 1545142351
+    locked: 0
+  - name: Enemy
+    uniqueID: 532818459
+    locked: 0
+  - name: Player
+    uniqueID: 4227033263
+    locked: 0
+  - name: Heart
+    uniqueID: 4213454623
+    locked: 0
+  - name: Weapons
+    uniqueID: 2275245059
+    locked: 0
+  - name: Canva
+    uniqueID: 3813268189
+    locked: 0
+  m_RenderingLayers:
+  - Default

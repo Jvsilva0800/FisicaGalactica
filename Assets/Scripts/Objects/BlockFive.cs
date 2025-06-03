@@ -1,0 +1,24 @@
+using UnityEngine;
+
+public class BlockFive : Block
+{//Bloco do desafio do ponto de encontro segunda fase, 
+
+    private float BlockDirection;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        Speed = -9;//velocidade ideal escolhida
+        //ChangeSpeed();
+        GameManager.Instance.Phase3Manager.RegisterNewBlock(this);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        BlockDirection = 1 * Time.deltaTime * Speed;
+        transform.Translate(BlockDirection, 0, 0);
+    }
+
+
+}
