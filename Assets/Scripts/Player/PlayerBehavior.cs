@@ -105,6 +105,7 @@ public class PlayerBehavior : BasePlayer
         if (Time.time - lastGroundedTime > coyoteTime)
             return;
         dust.Play();
+        SoundManager.Instance.PlaySound3D("Jump", transform.position);
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpForce);
         // rb.linearVelocity += Vector2.up * JumpForce;//o método agora modifica a propriedade linearVelocity do Rigidbody2D; Vector2.up * JumpForce: Cria um vetor apontando para cima (eixo Y) multiplicado pela força definida em JumpForce; rb.linearVelocity += ...: Adiciona esse vetor à velocidade linear atual, fazendo com que o player seja impulsionado para cima.
     }

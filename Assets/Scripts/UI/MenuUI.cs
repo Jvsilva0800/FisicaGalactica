@@ -12,6 +12,7 @@ public class MenuUI : MonoBehaviour
 
     private void OnEnable()//Esse método é chamado automaticamente quando o objeto se torna ativo na cena
     {
+        MusicManager.Instance.PlayMusic("MenuMusic");
         optionsPanel.SetActive(false);
 
         startButton.onClick.AddListener(GoToGameplayScene);

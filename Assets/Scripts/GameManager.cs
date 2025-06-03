@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour
         Instance = this;
 
         InputManager = new();
-
     }
     private void Update()
     {
