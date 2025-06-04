@@ -37,5 +37,6 @@ public class EnemyShooting : MonoBehaviour
     void Shoot()
     {
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
+        SoundManager.Instance.PlaySound3D("Enemy Shoot", transform.position);
     }
 }

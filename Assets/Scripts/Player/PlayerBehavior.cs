@@ -73,8 +73,18 @@ public class PlayerBehavior : BasePlayer
 
     private void MovePlayer()
     {
+
         moveDirection = GameManager.Instance.InputManager.Movement * Time.deltaTime * MoveSpeed;
         transform.Translate(moveDirection, 0, 0);
+    }
+
+    public void PlayWalkSound()//a execução dessa função eta associada a frames da animação de "walk" do player
+    {
+        if (groundedChecker.IsGrounded())//necessário fazer essa verificação pois ao trocar de animação no painel de "animation" do player, existe um delay mínimo que faz com que mesmo no ar, por uma fração de segundo, é possível escutar o som de passos. 
+        {
+            SoundManager.Instance.PlaySound3D("Walk", transform.position);
+        }
+
     }
 
     private void FlipSpriteAccordingMoveDirection()

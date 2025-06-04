@@ -41,7 +41,7 @@ public class MeleeEnemy : BaseEnemy
     {
         if (kBCount < 0)//Se o contador de knockback (kBCount) já acabou (ou nunca foi iniciado), o jogador se move normalmente, chamando MovePlayer(). Nesse caso ele é decrementado infinitamente 
         {
-            //Não faz nd
+            //Não faz nada
         }
         else//Enquanto kBCount for ≥ 0, o player está em “stun” e em vez de andar, recebe um impulso.
         {
@@ -123,10 +123,12 @@ public class MeleeEnemy : BaseEnemy
     private void EnemyHurtAnim()
     {
         hurtParticle.Play();//Quando o player recebe um hit saem particulas do corpo
+        SoundManager.Instance.PlaySound3D("Hurt Skeleton", transform.position);
     }
     private void EnemyDeathAnimAndDestroy()
     {
         animator.SetTrigger("IsDead");
+        SoundManager.Instance.PlaySound3D("Enemy Death", transform.position);
         StartCoroutine(DestroyAfterAnimation(0.30f));//No momento em que você dispara a animação de morte (por exemplo, no callback do evento OnDead), inicie uma coroutine que aguarde o tempo da animação e, em seguida, destrua o GameObject.
     }
 

@@ -23,6 +23,7 @@ public class MenuUI : MonoBehaviour
     private void GoToGameplayScene()
     {//Troca para a cena chamada "Gameplay". É necessário mudar o nome da scene na Unity para o escolhido abaixo
         GameManager.Instance.LevelManager.LoadScene("Tutorial", "CrossFade");
+        MusicManager.Instance.PlayMusic("GameMusic");//Musica tema do jogo, é chamado quando troca de cena
     }
     private void OpenOptionsMenu()
     {

@@ -9,6 +9,7 @@ public class BasePlayer : MonoBehaviour
 
     protected virtual void Awake()
     {
+
         animator = GetComponent<Animator>();
         groundedChecker = GetComponent<GroundedChecker>();
         playerHealth = GetComponent<HealthManager>();

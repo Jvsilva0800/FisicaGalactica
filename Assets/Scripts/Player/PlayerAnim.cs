@@ -41,6 +41,7 @@ public class PlayerAnim : BasePlayer
         {
             meleeWeapon.EnableMeleeWeapon();//A arma aparece 
 
+            SoundManager.Instance.PlaySound3D("Scythe", transform.position);
             animatorMeleeWeapon.SetTrigger("scythe");
             animator.SetTrigger("Attack");
 
@@ -52,10 +53,12 @@ public class PlayerAnim : BasePlayer
     private void PlayHurtAnim()
     {
         animator.SetTrigger("Hurt");
+        SoundManager.Instance.PlaySound3D("Hurt Player", transform.position);
     }
     private void PlayDeadAnim()
     {
         animator.SetBool("IsDead", true);
+        SoundManager.Instance.PlaySound3D("Player Death", transform.position);
     }
 
 

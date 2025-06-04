@@ -287,7 +287,7 @@ Transform:
   m_GameObject: {fileID: 6271601366611337586}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4817824, y: 1.4317865, z: -0.68123084}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -311,8 +311,32 @@ MonoBehaviour:
   - groupID: Jump
     clips:
     - {fileID: 8300000, guid: 4addc82e21b989e4a98f48c37e77b008, type: 3}
-    - {fileID: 8300000, guid: 526c804c13404074bb004aa359113709, type: 3}
-    - {fileID: 8300000, guid: d9ae5981ae18f3e479e1e04e3af6ceb9, type: 3}
+  - groupID: Hurt Skeleton
+    clips:
+    - {fileID: 8300000, guid: fc28b3c2d42c75a41a03a1fbfd502001, type: 3}
+    - {fileID: 8300000, guid: 64d206cda67db4346bacdcd360cb4ae3, type: 3}
+    - {fileID: 8300000, guid: ddbac3323be3cc040a90ee04da40c51b, type: 3}
+  - groupID: Scythe
+    clips:
+    - {fileID: 8300000, guid: 89cf153444b90294dbf475e1220b5df8, type: 3}
+  - groupID: Walk
+    clips:
+    - {fileID: 8300000, guid: 96390761d26029c44a46142305e8c1f2, type: 3}
+  - groupID: Walk Skeleton
+    clips:
+    - {fileID: 8300000, guid: 1bbe111b2ba7efc488351368b97f299b, type: 3}
+  - groupID: Hurt Player
+    clips:
+    - {fileID: 8300000, guid: 2a3a69c01c0d1b94db0663c095c6a3ea, type: 3}
+  - groupID: Player Death
+    clips:
+    - {fileID: 8300000, guid: 0b0aa9ab772de4a41ae990e377fd3ebe, type: 3}
+  - groupID: Enemy Death
+    clips:
+    - {fileID: 8300000, guid: 9d4aa1762aef3bc41ab635c02f1f79ed, type: 3}
+  - groupID: Enemy Shoot
+    clips:
+    - {fileID: 8300000, guid: bcd5a2fa995d53f49ba7ce8229898463, type: 3}
 --- !u!114 &1017597257207612355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,7 +365,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tracks:
   - trackName: MenuMusic
-    clip: {fileID: 8300000, guid: d0bf1437f6cbd164baba5d661ba6e976, type: 3}
+    clip: {fileID: 8300000, guid: 758547804be604546a1515e48cf62757, type: 3}
+  - trackName: GameMusic
+    clip: {fileID: 8300000, guid: ff619bfdfe0771d46b7a1d5afdee062c, type: 3}
 --- !u!114 &281707531204494244
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -57,4 +57,9 @@ public class EnemyPatrol : BaseEnemy
 
     }
 
+    public void PlaySoundWalk()
+    {
+        SoundManager.Instance.PlaySound3D("Walk Skeleton", transform.position, 7.0f);
+    }
+
 }
